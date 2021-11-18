@@ -7,6 +7,7 @@ client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
 
 async def event_handler(event, sender_id, forward_chat_id):
     if event.sender_id == sender_id:
+        print(f'new message from {sender_id}')
         if event.message.is_reply:
             reply_message = await event.message.get_reply_message()
             await client.send_message(forward_chat_id, f'В ответ на сообщение:')
