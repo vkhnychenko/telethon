@@ -1,0 +1,11 @@
+venv
+__pycache__
+.idea
+.data
+.env
+.env.db
+.env.prod
+.env.db.prod
+static
+db.sqlite3
+*.session
