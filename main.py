@@ -31,7 +31,7 @@ async def new_message_event_handler(event):
     await event.get_sender()
     await event_handler(event, 233787240, -657152166) #Slavik Investor
     await event_handler(event, 58149469, -642005665) #Anton Katin
-    await event_handler(event, 309275950, -652900673) #Test
+    # await event_handler(event, 309275950, -652900673) #Test
 
 
 # async def main():
