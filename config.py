@@ -1,9 +1,12 @@
 import os
 from dotenv import load_dotenv
+from loguru import logger
 
 env_path = os.path.join(os.path.dirname(__file__), ".env")
 if os.path.exists(env_path):
     load_dotenv(dotenv_path=env_path)
+
+logger.add('logs/debug.log', format="{time} {level} {message}", level="ERROR", rotation="1 MB", compression='zip')
 
 # 58149469 Anton Katin ID
 # 233787240 Slavik investor ID

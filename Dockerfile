@@ -8,4 +8,4 @@ COPY . /app
 RUN pip install --upgrade pip
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "./main.py"]
+#CMD ["python", "./main.py"]
