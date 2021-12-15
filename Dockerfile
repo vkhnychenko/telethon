@@ -5,7 +5,6 @@ RUN apt update
 WORKDIR /app
 COPY . /app
 
-RUN pip install --upgrade pip
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
+RUN python3 -m pip install --upgrade pip
 
-#CMD ["python", "./main.py"]
+RUN python3 -m pip install --no-cache-dir -r requirements.txt

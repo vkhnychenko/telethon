@@ -9,3 +9,4 @@ __pycache__
 static
 db.sqlite3
 *.session
+chats.json
