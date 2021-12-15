@@ -33,6 +33,11 @@ async def message_edit_handler(event):
     await event_handler(sender_id, event.message)
 
 
+@client.on(events.NewMessage(chats=[-1001188323070]))
+async def chats_event_handler(event):
+    logger.info(event.message.text)
+
+
 # @client.on(events.NewMessage())
 # async def test_event(event):
 #     """Handler all events new message"""
@@ -47,5 +52,5 @@ async def get_chat(chat_name: str):
 
 logger.info('start')
 client.start()
-# client.loop.run_until_complete(get_chat('Brokoli Network'))
+# client.loop.run_until_complete(get_chat('NEUTRINO CHAT [RU]'))
 client.run_until_disconnected()

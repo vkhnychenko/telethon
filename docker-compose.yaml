@@ -10,3 +10,11 @@ services:
     command: python ./main.py
     env_file:
       - .env
+  cron:
+    image: medoff/cron:v2
+    container_name: 'telethon-cron'
+    environment:
+      - CRON="* * * * *"
+      - CMD="date"
+    depends_on:
+      - bot
