@@ -11,6 +11,14 @@
   * {"USER_ID": FORWARD_CHAT_ID}
 ## Run project
 
+### First launch
+
 ```
-docker-compose up --build
+docker-compose build
+docker-compose run bot python ./main.py
+```
+
+### Other launch
+```
+docker-compose up
 ```

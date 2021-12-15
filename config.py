@@ -12,7 +12,7 @@ logger.add('logs/debug.log', format="{time} {level} {message}", level="ERROR", r
 
 API_ID = os.getenv('API_ID')
 API_HASH = os.getenv('API_HASH')
-SESSION_NAME = os.getenv('SESSION_NAME')
+SESSION_NAME = f"./sessions/{os.getenv('SESSION_NAME')}"
 
 with open("chats.json", "r") as read_file:
     CHATS = json.load(read_file)
