@@ -20,5 +20,5 @@ docker-compose run bot python ./main.py
 
 ### Other launch
 ```
-docker-compose up
+docker-compose up -d
 ```

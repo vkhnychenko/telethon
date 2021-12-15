@@ -1,0 +1,1 @@
+* * * * * date >> /app/logs/asdf
