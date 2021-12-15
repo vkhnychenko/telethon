@@ -5,7 +5,7 @@ RUN apt update && apt-get install -y cron rsyslog
 WORKDIR /app
 COPY . /app
 
-COPY cron /etc/cron.d/sample
+COPY cron.d /etc/cron.d/sample
 
 RUN python3 -m pip install --upgrade pip
 
