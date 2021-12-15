@@ -7,7 +7,7 @@ env_path = os.path.join(os.path.dirname(__file__), ".env")
 if os.path.exists(env_path):
     load_dotenv(dotenv_path=env_path)
 
-logger.add('logs/debug.log', format="{time} {level} {message}", level="ERROR", rotation="1 MB", compression='zip')
+logger.add('logs/log.log', format="{time} {level} {message}", level="INFO", rotation="1 MB", compression='zip')
 
 
 API_ID = os.getenv('API_ID')

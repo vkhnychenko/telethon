@@ -14,7 +14,7 @@ services:
     image: medoff/cron:v2
     container_name: 'telethon-cron'
     environment:
-      - CRON="* * * * *"
-      - CMD="date"
+      - CRON=* * * * *
+      - CMD=date
     depends_on:
       - bot
