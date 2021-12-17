@@ -5,6 +5,7 @@
     * API_ID
     * API_HASH
     * SESSION_NAME
+    * CONTAINER_NAME
     
 
 - create chats.json file
